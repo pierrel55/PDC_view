@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PDC_view", "PDC_view.vcproj", "{009134C2-2262-4E99-9F27-EBA7412A4665}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{009134C2-2262-4E99-9F27-EBA7412A4665}.Debug|Win32.ActiveCfg = Debug|Win32
+		{009134C2-2262-4E99-9F27-EBA7412A4665}.Debug|Win32.Build.0 = Debug|Win32
+		{009134C2-2262-4E99-9F27-EBA7412A4665}.Release|Win32.ActiveCfg = Release|Win32
+		{009134C2-2262-4E99-9F27-EBA7412A4665}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

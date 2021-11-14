@@ -1,0 +1,59 @@
+Build informations.
+
+---------------------------------------
+Windows, visual studio:
+---------------------------------------
+
+- use PDC_view.sln project file
+
+note: if visual studio (depend of version) complain about missing stdint.h/stdbool.h, headers in msvc directory can be used.
+
+---------------------------------------
+Windows GCC (MINGW 32/64):
+---------------------------------------
+
+- use following build command line: (use copy/paste, do not split command line)
+
+
+gcc -Wall -O3 -fms-extensions dlg_console.c dlg_ctrl.c dlg_graph.c dlg_main.c PDC/crystals.c PDC/pdc.c win/bitmap.c win/debug.c win/font.c win/screen_ms.c win/win.c win/widget/wg_blk.c win/widget/wg_blocks.c win/widget/wg_cons.c win/widget/wg_edit.c win/widget/wg_graph.c win/widget/wg_mbox.c win/widget/wg_menu.c win/widget/wg_priv.c win/widget/wg_sldr.c win/widget/wg_style.c win/widget/wg_wl.c win/widget/widget.c -s -lgdi32 -lm -o PDC_view.exe
+
+
+note: same command can be used with mingw32 and mingw64
+
+
+-------------------------------------------
+Linux build:
+-------------------------------------------
+
+- use following build command line: (use copy/paste, do not split command line)
+
+
+gcc -Wall -O3 -fms-extensions dlg_console.c dlg_ctrl.c dlg_graph.c dlg_main.c PDC/crystals.c PDC/pdc.c win/bitmap.c win/debug.c win/font.c win/screen_x11.c win/win.c win/widget/wg_blk.c win/widget/wg_blocks.c win/widget/wg_cons.c win/widget/wg_edit.c win/widget/wg_graph.c win/widget/wg_mbox.c win/widget/wg_menu.c win/widget/wg_priv.c win/widget/wg_sldr.c win/widget/wg_style.c win/widget/wg_wl.c win/widget/widget.c -s -lX11 -lpthread -lm -o PDC_view_x11
+
+
+Possible errors:
+
+-> message like stdio.h header file not found.
+
+=> base GCC compile header not installed (ex: some linux mint)
+
+can be installed with command:
+
+sudo apt-get install build-essential
+
+
+-> message like X11.h not found
+
+=> GCC X11 header files and library not installed
+
+can be installed with command:
+
+sudo apt-get install libx11-dev
+
+
+When builded, to execute type
+./PDC_view_x11
+
+
+note: windows/linux code differ with one file (screen_x11.c or screen_ms.c used)
+

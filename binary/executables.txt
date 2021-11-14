@@ -1,0 +1,20 @@
+------------------------------
+windows version
+------------------------------
+
+pdc_view_win.exe (32/64 bits)
+
+
+------------------------------
+linux version
+------------------------------
+
+PDC_view_x11
+
+to execute type
+./PDC_view_x11
+
+
+Program use single executable and do not require installation.
+
+
